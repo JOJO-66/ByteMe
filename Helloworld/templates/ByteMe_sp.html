@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页示例</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* 使内容在头部区域两端对齐 */
+        }
+        .logo {
+            margin-right: 20px;
+        }
+        .nav {
+            font-size: 25px;
+            display: flex;
+            gap: 30px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .nav a.active,
+        .nav a:hover {
+            color: #4cd32e; /* 确保颜色代码正确 */
+        }
+        .main {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #efefef; /* 设置背景颜色 */
+            justify-content: space-evenly; /* 使内容在头部区域两端对齐 */
+        }
+        .main img {
+            margin-right: 20px;
+        }
+
+        .main h1 {
+            font-size: 72px;
+            margin: 0;
+        }
+
+        .block {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff; /* 设置背景颜色 */
+            justify-content: space-evenly; /* 使内容在头部区域两端对齐 */
+        }
+        .bottom {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #404040; /* 设置背景颜色 */
+            justify-content: center; /* 使内容在头部区域两端对齐 */
+        }
+        .bottom h2 {
+            font-size: 36px;
+            color: white;
+            margin: 0;
+            font-weight: normal;
+        }
+        .bottom p {
+            font-size: 20px;
+            color: white;
+            margin: 0;
+            font-weight: normal;
+        }
+        .downer {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .downer-content {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* 使内容在头部区域两端对齐 */
+        }
+        .downer-content p {
+            font-size: 16px;
+            color: white;
+            margin: 0;
+            font-weight: normal;
+        }
+        .downer h2 {
+            font-size: 32px;
+        }
+        .green-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4cd32e; /* 绿色背景 */
+            color: white; /* 白色文字 */
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px; /* 圆角 */
+            border: none; /* 无边框 */
+            cursor: pointer;
+        }
+        .green-button:hover {
+            background-color: #45a049; /* 鼠标悬停时的深绿色背景 */
+        }
+        .downer-content a {
+            color: white;
+            text-decoration: none;
+        }
+        .downer-content a.active,
+        .downer-content a:hover {
+            color: #4cd32e; /* 确保颜色代码正确 */
+        }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4cd32e; /* 绿色背景 */
+            color: white; /* 白色文字 */
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px; /* 圆角 */
+            border: none; /* 无边框 */
+            cursor: pointer;
+        }
+        .download-button:hover {
+            background-color: #45a049; /* 鼠标悬停时的深绿色背景 */
+        }
+        .upload-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4cd32e; /* 绿色背景 */
+            color: white; /* 白色文字 */
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px; /* 圆角 */
+            border: none; /* 无边框 */
+            cursor: pointer;
+        }
+        .upload-button:hover {
+            background-color: #45a049; /* 鼠标悬停时的深绿色背景 */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Logo.jpg" alt="Logo" class="logo" width="347" height="110">
+        <div class="nav">
+            <a href="ByteMe首页.html">首页</a>
+            <a href="ByteMe产品介绍html">产品介绍</a>
+            <a href="ByteMe试用.html" class="active">试用</a>
+            <a href="ByteMe关于我们.html">关于我们</a>
+        </div>
+    </div>
+    <div class="block">
+        <p></p>
+    </div>   
+    <div class="block">
+        <img src="表单小图.png" alt="表单" width="184" height="134">
+        <div>
+            <h2>第一步：获取表单</h2>
+            <p>点击按钮，下载表单模板</p>
+            <button class="download-button" onclick="downloadExcel()">下载Excel文件</button>
+    <script>
+        function downloadExcel() {
+            // 替换为你的Excel文件的URL
+            var excelFileURL = 'Example.xlsx';
+
+            // 创建一个隐藏的<a>元素
+            var link = document.createElement('a');
+            link.href = excelFileURL;
+            link.download = 'example.xlsx'; // 设置下载的文件名
+
+            // 将<a>元素添加到DOM中并触发点击事件
+            document.body.appendChild(link);
+            link.click();
+
+            // 移除<a>元素
+            document.body.removeChild(link);
+        }
+    </script>
+        </div>
+    </div>
+    <div class="block">
+    </div>    
+    <div class="block">
+        <img src="电脑小图.png" alt="电脑" width="300" height="184">
+        <div>
+            <h2>第二步：处理表单</h2>
+            <p>点击按钮，上传已填表单</p>
+            <input type="file" id="fileInput" accept=".xlsx, .xls">
+            <div>
+            <button class="upload-button" onclick="uploadFile()">处理Excel文件</button>
+            </div>
+            <script>
+                async function uploadFile() {
+                    const fileInput = document.getElementById('fileInput');
+                    const file = fileInput.files[0];
+        
+                    if (!file) {
+                        alert('请选择一个文件');
+                        return;
+                    }
+        
+                    const formData = new FormData();
+                    formData.append('file', file);
+        
+                    try {
+                        const response = await fetch('/upload', {
+                            method: 'POST',
+                            body: formData
+                        });
+        
+                        if (response.ok) {
+                            const blob = await response.blob();
+                            const url = window.URL.createObjectURL(blob);
+                            const a = document.createElement('a');
+                            a.href = url;
+                            a.download = 'processed_file.xlsx';
+                            document.body.appendChild(a);
+                            a.click();
+                            a.remove();
+                            window.URL.revokeObjectURL(url);
+                        } else {
+                            alert('上传失败');
+                        }
+                    } catch (error) {
+                        console.error('Error:', error);
+                        alert('上传失败');
+                    }
+                }
+            </script>              
+        </div>
+    </div>
+    <div class="block">
+        
+    </div>
+    <div class="block">
+    </div>
+    <div class="downer">
+        <h2>苏州大学</h2>
+        <img src="smallLogo.jpg" alt="Logo" class="logo" width="114" height="40">
+        <h2>技术团队</h2>
+    </div>
+    <div class="downer-content">
+        <div>
+        <p>地址：苏州市干将东路333号</p>
+        </div>
+        <div>
+        <a href="ByteMe关于我们.html">品牌介绍</a>
+        </div>
+    </div>
+    <div class="downer-content">
+        <div>
+        <p>电话：010-00000000</p>
+        </div>
+        <div>
+        <a href="ByteMe关于我们.html">团队介绍</a>
+        </div>
+    </div>
+    <div class="downer-content">
+        <div>
+        <p>邮箱：support@suda.edu.cn</p>
+        </div>
+        <div>
+        <a href="ByteMe关于我们.html">关于我们</a>
+        </div>
+    </div>
+    <div class="downer-content">
+    </div>
+    <div class="downer-content">
+    </div>
+    <div class="downer-content">
+    </div>
+</body>
+</html>
