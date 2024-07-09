@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页示例</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* 使内容在头部区域两端对齐 */
+        }
+        .logo {
+            margin-right: 20px;
+        }
+        .nav {
+            font-size: 25px;
+            display: flex;
+            gap: 30px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .nav a.active,
+        .nav a:hover {
+            color: #4cd32e; /* 确保颜色代码正确 */
+        }
+        .main {
+            display: flex;
+            align-items: center;
+            padding: 0px;
+            background-color: #ffffff; /* 设置背景颜色 */
+            justify-content: flex-start; /* 使内容在头部区域两端对齐 */
+        }
+        .main img {
+            margin-right: 0px;
+        }
+
+        .main h1 {
+            font-size: 72px;
+            margin: 0;
+        }
+
+        .block {
+            display: flex;
+            align-items: center;
+            padding: 0px;
+            background-color: #ffffff; /* 设置背景颜色 */
+            justify-content: center; /* 使内容在头部区域两端对齐 */
+        }
+        .block h2   {
+            font-size: 36px;
+        }
+        .containter {
+            display: inline-block;
+            padding: 10px 100px;
+            background-color: #ffffff; 
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 1px;
+            border: 2px solid black; /* 黑色边框 */
+        }
+        .block-darker {
+            display: flex;
+            align-items: center;
+            padding: 0px;
+            background-color: #efefef; /* 设置背景颜色 */
+            justify-content: center; /* 使内容在头部区域两端对齐 */
+        }
+        .block-darker h2   {
+            font-size: 36px;
+        }
+        .downer {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .downer-content {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* 使内容在头部区域两端对齐 */
+        }
+        .downer-content p {
+            font-size: 16px;
+            color: white;
+            margin: 0;
+            font-weight: normal;
+        }
+        .downer h2 {
+            font-size: 32px;
+        }
+        .downer-content a {
+            color: white;
+            text-decoration: none;
+        }
+        .downer-content a.active,
+        .downer-content a:hover {
+            color: #4cd32e; /* 确保颜色代码正确 */
+        }
+        .whitespace{
+            color: white;
+        }
+        .greyspace {
+            color:#efefef
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Logo.jpg" alt="Logo" class="logo" width="347" height="110">
+        <div class="nav">
+            <a href="ByteMe_Home.html">首页</a>
+            <a href="ByteMe_Intro.html" class="active">产品介绍</a>
+            <a href="ByteMe_Try.html">试用</a>
+            <a href="ByteMe_About.html">关于我们</a>
+        </div>
+    </div>
+    <div class="main">
+        <img src="buildings.jpg" alt="背景图" width="1700" height="340">
+    </div>
+    <div class="block">
+        <h2></h2>
+    </div>   
+    <div class="block">
+        <div class="containter">
+            <img src="产线生产计划.png" width="133" height="117">
+            <p>1.产线生产计划</p>
+            <p>制定产线生产计划</p>
+        </div>
+        <div class="whitespace">
+            <p>————————</p>
+        </div>
+        <div class="containter">
+            <img src="订单进度追踪.png" width="147" height="117">
+            <p>2.订单进度查看</p>
+            <p>实时查看订单进度</p>
+        </div>
+        <div class="whitespace">
+            <p>————————</p>
+        </div>
+        <div class="containter">
+            <img src="物料需求计划.png" width="168" height="117">
+            <p>3.物料需求计划</p>
+            <p>生成物料需求计划</p>
+        </div>
+    </div>
+    <div class="block">
+        <div>
+            <h2></h2>
+        </div>
+    </div>
+    <div class="block">
+        <div>
+            <h2></h2>
+        </div>
+    </div>
+    <div class="block-darker">    
+        <div>
+            <h2>1.产线生产计划</h2>
+        </div>
+    </div>
+    <div class="block-darker">    
+        <div>
+            <p>系统提供便捷的多种途径制定工序级别的生产计划，工序间的生产计划可以互相依赖，也可以互相独立。</p>
+        </div>
+    </div>
+    <div class="block-darker">
+        <div>
+            <p>通过系统丰富的配置项，可以从容应对现实业务的复杂性。灵活简便的计划制定功能，从根本上减少计划时间、减轻工作负荷，提高工作效率。</p>
+        </div>        
+    </div>
+    <div class="block-darker">
+        <div>
+            <p>同时可避免人工计算的失误，使计划制定更为及时准确，计划调整更为便捷，对市场的反应更快，能够更好地应对插单、改单、订单逾期、交货期回复、人员变动及设备意外故障等问题。</p>
+        </div>        
+    </div>
+    <div class="block-darker">
+        <div>
+            <h2></h2>
+        </div>
+    </div>    
+    <div class="block-darker">
+        <img src="产线生产计划 (2).png" alt="Business" width="755" height="250">
+        <div class="greyspace">
+            <p>———</p>
+        </div>
+        <p>全自动化高速排程，一键式、快速、智能，可以有效减轻计划人员的工作负担。</p>
+    </div>
+    <div class="block-darker">
+        <div>
+            <h2></h2>
+        </div>
+    </div>  
+    <div class="block-darker">
+        <div>
+            <h2></h2>
+        </div>
+    </div>
+    <div class="block-darker">
+        <div>
+            <h2></h2>
+        </div>
+    </div> 
+    <div class="block">    
+        <div>
+            <h2>2.订单进度查看</h2>
+        </div>
+    </div>
+    <div class="block">    
+        <div>
+            <p>全程掌握并监控订单整个生产环节的进度，对于生产管理和保证订单交期是至关重要的。</p>
+        </div>
+    </div>
+    <div class="block">
+        <div>
+            <p>系统提供订单进度跟踪，能够掌握订单所有工序的生产细节，监控生产进度，对生产环节可能存在的问题及早发现，确保订单交期。</p>
+        </div>        
+    </div>
+    <div class="block">
+        <div>
+            <h2></h2>
+        </div>
+    </div>    
+    <div class="block">
+        <img src="订单进度查看.png" alt="Business" width="779" height="375">
+        <div class="whitespace">
+            <p>———</p>
+        </div>
+        <p>跟踪订单所有工序的计划排产信息、完工进度信息。跟踪产线计划产量与实际产量的对比，监控生产进度。</p>
+    </div>
+    <div class="block">
+        <div>
+            <h2></h2>
+        </div>
+    </div>  
+    <div class="block">
+        <div>
+            <h2></h2>
+        </div>
+    </div>
+    <div class="block">
+        <div>
+            <h2></h2>
+        </div>
+    </div> 
+    <div class="block-darker">    
+        <div>
+            <h2>3.物料需求计划</h2>
+        </div>
+    </div>
+    <div class="block-darker">    
+        <div>
+            <p>提升生产效率，降低库存成本，优化资源分配，是制造业企业提高竞争力、实现精益生产的得力助手。</p>
+        </div>
+    </div>
+    <div class="block-darker">
+        <div>
+            <p>通过智能计算，精确规划物料的采购、生产和库存，确保生产过程中物料的及时供应，避免因物料短缺或过剩而造成生产延误或成本增加。</p>
+        </div>        
+    </div>
+    <div class="block-darker">
+        <div>
+            <h2></h2>
+        </div>
+    </div>    
+    <div class="block-darker">
+        <img src="物料需求.webp" alt="Business" width="971" height="500">
+        <div class="greyspace">
+            <p>———</p>
+        </div>
+        <p>根据生产计划，精确生成物料需求，确保物料不会产生冗余和短缺。</p>
+    </div>
+    <div class="block-darker">
+        <div>
+            <h2></h2>
+        </div>
+    </div>  
+    <div class="block-darker">
+        <div>
+            <h2></h2>
+        </div>
+    </div>
+    <div class="block-darker">
+        <div>
+            <h2></h2>
+        </div>
+    </div> 
+    <div class="downer">
+        <h2>苏州大学</h2>
+        <img src="smallLogo.jpg" alt="Logo" class="logo" width="114" height="40">
+        <h2>技术团队</h2>
+    </div>
+    <div class="downer-content">
+        <div>
+        <p>地址：苏州市干将东路333号</p>
+        </div>
+        <div>
+        <a href="ByteMe_About.html">品牌介绍</a>
+        </div>
+    </div>
+    <div class="downer-content">
+        <div>
+        <p>电话：010-00000000</p>
+        </div>
+        <div>
+        <a href="ByteMe_About.html">团队介绍</a>
+        </div>
+    </div>
+    <div class="downer-content">
+        <div>
+        <p>邮箱：support@suda.edu.cn</p>
+        </div>
+        <div>
+        <a href="ByteMe_About.html">关于我们</a>
+        </div>
+    </div>
+    <div class="downer-content">
+    </div>
+    <div class="downer-content">
+    </div>
+    <div class="downer-content">
+    </div>
+</body>
+</html>

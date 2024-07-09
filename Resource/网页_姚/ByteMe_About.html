@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页示例</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* 使内容在头部区域两端对齐 */
+        }
+        .logo {
+            margin-right: 20px;
+        }
+        .nav {
+            font-size: 25px;
+            display: flex;
+            gap: 30px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .nav a.active,
+        .nav a:hover {
+            color: #4cd32e; /* 确保颜色代码正确 */
+        }
+        .main {
+            display: flex;
+            align-items: center;
+            padding: 0px;
+            background-color: #ffffff; /* 设置背景颜色 */
+            justify-content: flex-start; /* 使内容在头部区域两端对齐 */
+        }
+        .main img {
+            margin-right: 0px;
+        }
+
+        .main h1 {
+            font-size: 72px;
+            margin: 0;
+        }
+
+        .block {
+            display: flex;
+            align-items: center;
+            padding: 0px;
+            background-color: #ffffff; /* 设置背景颜色 */
+            justify-content: center; /* 使内容在头部区域两端对齐 */
+        }
+        .block h2   {
+            font-size: 36px;
+        }
+        .block-darker {
+            display: flex;
+            align-items: center;
+            padding: 0px;
+            background-color: #efefef; /* 设置背景颜色 */
+            justify-content: center; /* 使内容在头部区域两端对齐 */
+        }
+        .block-darker h2   {
+            font-size: 36px;
+        }
+        .block-lighter {
+            display: flex;
+            align-items: center;
+            padding: 100px;
+            background-color: #ffffff; /* 设置背景颜色 */
+            justify-content: space-between; /* 使内容在头部区域两端对齐 */
+        }
+
+        .block-lighter h2   {
+            font-size: 36px;
+        }
+        .downer {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .downer-content {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* 使内容在头部区域两端对齐 */
+        }
+        .downer-content p {
+            font-size: 16px;
+            color: white;
+            margin: 0;
+            font-weight: normal;
+        }
+        .downer h2 {
+            font-size: 32px;
+        }
+        .downer-content a {
+            color: white;
+            text-decoration: none;
+        }
+        .downer-content a.active,
+        .downer-content a:hover {
+            color: #4cd32e; /* 确保颜色代码正确 */
+        }
+        .whitespace {
+            color:#ffffff
+        }
+        .greyspace {
+            color:#efefef
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Logo.jpg" alt="Logo" class="logo" width="347" height="110">
+        <div class="nav">
+            <a href="ByteMe_Home.html">首页</a>
+            <a href="ByteMe_Intro.html">产品介绍</a>
+            <a href="ByteMe_Try.html">试用</a>
+            <a href="ByteMe_About.html" class="active">关于我们</a>
+        </div>
+    </div>
+    <div class="main">
+        <img src="蓝天白云.jpg" alt="背景图" width="1700" height="340">
+    </div>
+    <div class="block">
+        <p></p>
+    </div>   
+    <div class="block">
+        <div>
+            <h2>团队介绍</h2>
+        </div>
+    </div>
+    <div class="block">
+        <div>
+            <p>我们是一支年轻化，富有活力的创新型团队，致力于通过创新的智能排程解决方案，帮助企业提高生产效率、优化资源利用，推动行业智能化转型。</p>
+        </div>
+    </div>
+    <div class="block">
+        <div>
+            <h2></h2>
+        </div>
+    </div>    
+    <div class="block">
+        <img src="8.jpg" alt="团队成员" width="600" height="400">
+        <div class="whitespace">
+        <p>-----------------------------</p>
+        </div>
+        <img src="团队.jpg" alt="团队" width="600" height="400">
+    </div>
+    <div class="block">
+        <div>
+            <h2></h2>
+        </div>
+    </div>
+    <div class="block">
+        <div>
+            <h2></h2>
+        </div>
+    </div>
+    <div class="block">
+        <div>
+            <h2></h2>
+        </div>
+    </div>
+    <div class="block-darker">
+        <div>
+            <h2></h2>
+        </div>
+    </div>
+    <div class="block-darker">    
+        <div>
+            <h2>品牌理念</h2>
+        </div>
+    </div>
+    <div class="block-darker">    
+        <div>
+            <p>通过智能化的生产计划和排程解决方案，推动制造业向高效、灵活和可持续发展的方向迈进。</p>
+            
+        </div>
+    </div>
+    <div class="block-darker">
+        <div>
+            <p>我们的目标是成为全球制造业智能排程解决方案的领导者，帮助企业实现数字化转型，提升竞争力。</p>
+        </div>        
+    </div>
+    <div class="block-darker">
+        <div>
+            <h2></h2>
+        </div>
+    </div>    
+    <div class="block-darker">
+        <img src="6.jpg" alt="Business" width="450" height="300">
+        <div class="greyspace">
+            <p>-------------</p>
+        </div>
+        <img src="3.jpg" alt="Computer" width="450" height="300">
+        <div class="greyspace">
+            <p>-------------</p>
+        </div>
+        <img src="手机.jpg" alt="Phone" width="450" height="300">
+    </div>
+    <div class="block-darker">
+        <div>
+            <h2></h2>
+        </div>
+    </div>  
+    <div class="block-darker">
+        <div>
+            <h2></h2>
+        </div>
+    </div>
+    <div class="block-darker">
+        <div>
+            <h2></h2>
+        </div>
+    </div>
+    <div class="block-lighter">
+        <div>
+            <h2>经营理念</h2>
+            <p>客户至上：</p>
+            <p>始终将客户的需求和满意度放在首位，通过高质量的产品和优秀的服务，满足客户的多样化需求。</p>
+            <p>我们相信，只有客户的成功，才是我们的成功。</p>
+            <p>技术创新：</p>
+            <p>不断追求技术进步，积极采用最新的云计算、人工智能及大数据技术，为客户提供领先的智能排程解决方案。</p>
+            <p>我们鼓励创新，推动技术的不断迭代和优化。</p>
+            <p>质量为本：</p>
+            <p>注重产品的质量和可靠性，从需求分析、设计开发到测试上线，每一个环节都严格把关。</p>
+            <p>确保为用户提供稳定和高效的解决方案。</p>
+        </div>
+        <img src="meeting.jpg"alt="会议" width="571" height="347">
+    </div>
+    <div class="downer">
+        <h2>苏州大学</h2>
+        <img src="smallLogo.jpg" alt="Logo" class="logo" width="114" height="40">
+        <h2>技术团队</h2>
+    </div>
+    <div class="downer-content">
+        <div>
+        <p>地址：苏州市干将东路333号</p>
+        </div>
+        <div>
+        <a href="ByteMe_About.html">品牌介绍</a>
+        </div>
+    </div>
+    <div class="downer-content">
+        <div>
+        <p>电话：010-00000000</p>
+        </div>
+        <div>
+        <a href="ByteMe_About.html">团队介绍</a>
+        </div>
+    </div>
+    <div class="downer-content">
+        <div>
+        <p>邮箱：support@suda.edu.cn</p>
+        </div>
+        <div>
+        <a href="ByteMe_About.html">关于我们</a>
+        </div>
+    </div>
+    <div class="downer-content">
+    </div>
+    <div class="downer-content">
+    </div>
+    <div class="downer-content">
+    </div>
+</body>
+</html>

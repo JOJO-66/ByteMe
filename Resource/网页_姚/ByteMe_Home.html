@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网页示例</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* 使内容在头部区域两端对齐 */
+        }
+        .logo {
+            margin-right: 20px;
+        }
+        .nav {
+            font-size: 25px;
+            display: flex;
+            gap: 30px;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+        }
+        .nav a.active,
+        .nav a:hover {
+            color: #4cd32e; /* 确保颜色代码正确 */
+        }
+        .main {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #efefef; /* 设置背景颜色 */
+            justify-content: space-evenly; /* 使内容在头部区域两端对齐 */
+        }
+        .main img {
+            margin-right: 20px;
+        }
+
+        .main h1 {
+            font-size: 72px;
+            margin: 0;
+        }
+
+        .block {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #ffffff; /* 设置背景颜色 */
+            justify-content: space-evenly; /* 使内容在头部区域两端对齐 */
+        }
+        .bottom {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #404040; /* 设置背景颜色 */
+            justify-content: center; /* 使内容在头部区域两端对齐 */
+        }
+        .bottom h2 {
+            font-size: 36px;
+            color: white;
+            margin: 0;
+            font-weight: normal;
+        }
+        .bottom p {
+            font-size: 20px;
+            color: white;
+            margin: 0;
+            font-weight: normal;
+        }
+        .downer {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .downer-content {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* 使内容在头部区域两端对齐 */
+        }
+        .downer-content p {
+            font-size: 16px;
+            color: white;
+            margin: 0;
+            font-weight: normal;
+        }
+        .downer h2 {
+            font-size: 32px;
+        }
+        .green-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4cd32e; /* 绿色背景 */
+            color: white; /* 白色文字 */
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px; /* 圆角 */
+            border: none; /* 无边框 */
+            cursor: pointer;
+        }
+        .green-button:hover {
+            background-color: #45a049; /* 鼠标悬停时的深绿色背景 */
+        }
+        .downer-content a {
+            color: white;
+            text-decoration: none;
+        }
+        .downer-content a.active,
+        .downer-content a:hover {
+            color: #4cd32e; /* 确保颜色代码正确 */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="Logo.jpg" alt="Logo" class="logo" width="347" height="110">
+        <div class="nav">
+            <a href="ByteMe_Home.html" class="active">首页</a>
+            <a href="ByteMe_Intro.html">产品介绍</a>
+            <a href="ByteMe_Try.html">试用</a>
+            <a href="ByteMe_About.html">关于我们</a>
+        </div>
+    </div>
+    <div class="main">
+        <img src="背景图.jpg" alt="背景图" width="604" height="362">
+        <div>
+            <h1>让排程更简单</h1>
+            <h1>让生产更高效</h1>
+        </div>
+    </div>
+    <div class="block">
+        <p></p>
+    </div>   
+    <div class="block">
+        <div>
+            <h2>U排程——工业排程优化系统</h2>
+            <p>一款智能，易用的生产计划排程工具。</p>
+            <p>可实现订单生产计划自动排程，具备灵活的订单排程功能、</p>
+            <p>简介的操作页面、灵敏的异常预警机制。</p>
+        </div>
+        <img src="排程.webp" alt="排程" width="557" height="300">
+    </div>
+    <div class="block">
+    </div>    
+    <div class="block">
+        <img src="9.jpg" alt="BMW" width="500" height="308">
+        <div>
+            <h2>汽车制造行业</h2>
+            <p>优化设备和资源的排程，提高汽车生产线的利用率和效率；</p>
+            <p>确保零部件和装配线的协调，避免生产中断和延迟；</p>
+            <p>通过精确的生产排程，提升产品质量并确保符合标准。</p>
+        </div>
+    </div>
+    <div class="block">
+    </div>
+    <div class="block">
+        <div>
+            <h2>高科技产业</h2>
+            <p>优化研发项目的排程，确保产品开发按时完成；</p>
+            <p>合理安排人力和设备资源，支持创新和技术进步；</p>
+            <p>与全球供应商协调，确保原材料和零部件的及时供应。</p>
+        </div>
+        <img src="15.jpg" alt="机器人" width="438" height="300">
+    </div>
+    <div class="block">
+    </div>    
+    <div class="block">
+        <img src="纺织业.jpg" alt="纺织业" width="450" height="300">
+        <div>
+            <h2>纺织与轻工业</h2>
+            <p>优化纺织与轻工业生产过程，提高生产效率和品质；</p>
+            <p>通过精确的需求预测和生产过程，减少库存成本和废品率；</p>
+            <p>管理复杂的供应链，确保原材料和成品的流畅运输。</p>
+        </div>
+    </div>
+    <div class="block">
+    </div> 
+    <div class="block">
+    </div> 
+    <div class="bottom">
+        <div></div>
+    </div>
+    <div class="bottom">
+        <div>
+        <h2>安全稳定企业服务</h2>
+        </div>
+    </div>
+    <div class="bottom">
+        <div>
+        <p>10年服务经验累积，9种安全保障，8种服务场景，优质服务值得您信赖</p>
+        </div>
+    </div>
+    <div class="bottom">
+        <div>
+        <a href="ByteMe_About.html" class="green-button">了解更多</a>
+        </div>
+    </div>
+    <div class="bottom">
+        <div></div>
+    </div>
+    <div class="downer">
+        <h2>苏州大学</h2>
+        <img src="smallLogo.jpg" alt="Logo" class="logo" width="114" height="40">
+        <h2>技术团队</h2>
+    </div>
+    <div class="downer-content">
+        <div>
+        <p>地址：苏州市干将东路333号</p>
+        </div>
+        <div>
+        <a href="ByteMe_About.html">品牌介绍</a>
+        </div>
+    </div>
+    <div class="downer-content">
+        <div>
+        <p>电话：010-00000000</p>
+        </div>
+        <div>
+        <a href="ByteMe_About.html">团队介绍</a>
+        </div>
+    </div>
+    <div class="downer-content">
+        <div>
+        <p>邮箱：support@suda.edu.cn</p>
+        </div>
+        <div>
+        <a href="ByteMe_About.html">关于我们</a>
+        </div>
+    </div>
+    <div class="downer-content">
+    </div>
+    <div class="downer-content">
+    </div>
+    <div class="downer-content">
+    </div>
+</body>
+</html>
