@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
-
-file_path = 's/s_0.xlsx'
+#该代码用于把Excel文件读出
+file_path = 'ByteMe/Resource/test/s_0.xlsx'
 xls = pd.ExcelFile(file_path)
 
 def transpose_1(arr):

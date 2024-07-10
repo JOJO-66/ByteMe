@@ -14,9 +14,13 @@ from django.db import transaction
 from django.shortcuts import render
 
 @csrf_exempt
-def test1(request):
+def first_page(request):
     return render(request, 'ByteMe_fp.html')
 
 @csrf_exempt
 def second_page(request):
     return render(request,'ByteMe_sp.html')
+
+@csrf_exempt
+def third_page(request):
+    return render(request,'ByteMe_tp.html')
